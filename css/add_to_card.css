@@ -1,0 +1,135 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+#add_to_card{
+    padding: 100px 0;
+    background: linear-gradient(135deg, #36c5e9 0%, #4789e8 40%, #7836d5 75%, #a900c9 100%);
+}
+.card{
+    width: 470px;
+    margin: 0 auto;
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 30px;
+}
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-self: center;
+    height: 50px;
+}
+.logo{
+    width: 40px;
+}
+.logo img{
+    height: 40%;
+}
+.img{
+    overflow: hidden;
+}
+.img img{
+    width: 100%;
+    transition: transform  0.3s linear;
+}
+.img img:hover{
+    transform: scale(1.1) translateY(-10px);
+    filter: drop-shadow(0px 10px 8px rgba(143, 42, 143, 0.5));
+}
+.info{
+    padding: 10px 0;
+}
+.info_text h3{
+    font-size: 30px;
+    line-height: 40px;
+    font-weight: 700;
+}
+.info_text p{
+    font-size: 16px;
+    padding: 10px 0;
+    letter-spacing: 0.5px;
+    font-weight: 400;
+}
+.cp{
+    display: flex;
+    padding: 10px 0;
+    justify-content: space-between;
+    align-self: center;
+}
+.color{
+    display: flex;
+    gap: 10px;
+    align-self: center;
+}
+.color span {
+    font-size: 22px;
+    margin-right: 3px;
+}
+
+.color input[type="radio"] {
+    appearance: none;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    cursor: pointer;
+    padding: 10px;
+}
+
+.color input:nth-of-type(1) {
+    background: #168acb;
+}
+
+.color input:nth-of-type(2) {
+    background: #e83e83;
+}
+
+.color input:nth-of-type(3) {
+    background: #f5d500;
+}
+
+.color input:nth-of-type(1):checked {
+    outline: 2px solid #168acb;
+    outline-offset: 2px;
+}
+.color input:nth-of-type(2):checked {
+    outline: 2px solid #e83e83;
+    outline-offset: 2px;
+}
+.color input:nth-of-type(3):checked {
+    outline: 2px solid #f5d500;
+    outline-offset: 2px;
+}
+.price{
+    text-align: center;
+}
+.price h4{
+    font-size: 25px;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+.price p{
+    font-size: 12px;
+    font-weight: 400;
+}
+.btn{
+    width: 100%;
+    padding-top: 30px;
+    display: flex;
+    justify-content: center;
+}
+button{
+    padding: 15px 150px;
+    border-radius: 50px;
+    background: linear-gradient(135deg, #36c5e9 0%, #4789e8 40%, #7836d5 75%, #a900c9 100%);
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: 700;
+    transition: all linear 0.3s;
+    border: none;
+}
+button:hover{
+     background: linear-gradient(135deg, #a900c9 0%, #7836d5 40%, #4789e8  75%, #36c5e9 100%);
+     transform: scale(1.1);
+     box-shadow: 2px 2px 15px 2px #a900c9;
+}
